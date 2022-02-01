@@ -158,7 +158,13 @@ export default function Home(props) {
           </div>
           {/* <Text></Text> */}
         </Container>
+
       </div>
+      <footer className={classes.footer}
+    //  position="static"
+     >
+        <Typography>All right reserved.quality foods</Typography>
+      </footer>
     </Layout>
   );
 }

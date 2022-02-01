@@ -9,13 +9,17 @@ import {
   Grid,
   Typography,
   Button,
-  Link
+  Link,
+  CardActions,
+  CardActionArea,
+  Box,
 } from "@material-ui/core";
 import { MdEmail } from "react-icons/md";
 import Contactform from "../components/contactform";
 import { WhatsappShareButton, WhatsappIcon } from "next-share";
-import {FaPhoneAlt} from "react-icons/fa";
-import NextLink from "next/link"
+import { FaPhoneAlt } from "react-icons/fa";
+import NextLink from "next/link";
+import {IoMdArrowRoundBack} from "react-icons/io"
 
 export default function Contactus() {
   const classes = useStyles();
@@ -24,68 +28,115 @@ export default function Contactus() {
   return (
     <Layout title="contactus">
       <div className={classes.cover2}>
-        <Container style={{paddingTop:30}}>
+        <Container style={{ paddingTop: 30 }}>
           <Contactform></Contactform>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              margin: "1rem",
-              color: "#ffffff",
-              backgroundColor: "white",
-              justifyContent:"space-evenly",
-              minHeight:300,
-              borderRadius:"3px",
-              backgroundImage:'url("/images/cover4.jpg")',
-              backgroundSize:"cover",
-              marginTop:50
-            }}
-          >
-            <div style={{marginTop:30,fontFamily:"serif"}}>
-              
-              {/* <Typography style={{fontSize:"1.3rem",fontFamily:"serif"}}>
-                Contact us:<a href="tel:+919567420000">9567420000</a>
-              </Typography> */}
-           <h1>Address:</h1>
-           <h2>Quality Foods Pvt ltd</h2>
-           <h2>Palakkad</h2>
-           <h2>Pincode:679303 </h2>
-           <h2>Kerala</h2>
-           <h2>India</h2>
-            
-            </div>
-            <div style={{marginTop:30}}>
-           <h1 style={{fontFamily:"serif"}}>Connect us:</h1>
-           <Button onClick={()=>{
-    window.open("https://api.whatsapp.com/send?phone=919567420000",'__blank')
-  }}>
-    <WhatsappIcon style={{borderRadius:"50px"}}></WhatsappIcon>
-  </Button>
-  
-  <div>
-      
-    <Button onClick={()=>{
-      window.open("tel:+919567420000")
-      }}>
-      <FaPhoneAlt style={{marginTop:20,fontSize:"2rem",color:"#ffffff"}} >
-        
-  </FaPhoneAlt>
-        </Button>
+          <div style={{ marginTop: 50 }}>
+            <Grid container spacing={5}>
+              <Grid item md={6} xs={12}>
+                <Card
+                  style={{
+                    backgroundImage: 'url("images/address.jpg")',
+                    color: "white",
+                    backgroundSize: "cover",
+                  }}
+                >
+                  <CardContent style={{ textAlign: "center" }}>
+                    <Typography variant="h3">ADDRESS</Typography>
+                    <hr />
+                    <Typography variant="h4">Quality Foods</Typography>
+                    <Typography variant="h4">Palakkad</Typography>
+                    <Typography variant="h4">679303</Typography>
+                    <Typography variant="h4">Kerala</Typography>
+                    <Typography variant="h4">India</Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item md={6} xs={12}>
+                <Card
+                  style={{
+                    backgroundImage: 'url("images/connect.jpg")',
+                    color: "white",
+                    backgroundSize: "auto",
+                    height:320
+                  }}
+                >
+                  <CardContent>
+                    <Typography variant="h4" style={{ textAlign: "center" }}>
+                      Connect With Us
+                    </Typography>
+                  </CardContent>
+                  <div
+                    style={{ display: "flex", justifyContent: "space-evenly",marginTop:50 }}
+                  >
+                    <Button
+                      onClick={() => {
+                        window.open(
+                          "https://api.whatsapp.com/send?phone=919567420000",
+                          "__blank"
+                        );
+                      }}
+                    >
+                      <WhatsappIcon
+                        style={{ borderRadius: "47px", color: "#ffffff", }}
+                      ></WhatsappIcon>
+                    </Button>
+                    <Button
+                      onClick={() => {
+                        window.open("tel:+919567420000");
+                      }}
+                    >
+                      <FaPhoneAlt
+                        style={{
+                          // marginTop:20,
+                          fontSize: "2rem",
+                          color: "#ffffff",
+                        
 
-
-  </div>
-  <div>
-  <NextLink href="/contactus" passHref >
-    <Link>
-  <MdEmail style={{marginTop:20,fontSize:"2.5rem",color:"#ffffff"}}></MdEmail>
-    </Link>
-  </NextLink>
-  </div>
-  
-            </div>
-            
+                        }}
+                      ></FaPhoneAlt>
+                    </Button>
+                    <NextLink href="/contactus" passHref>
+                      <Link>
+                     
+                      <MdEmail
+                          style={{
+                            marginBottom: -40,
+                            fontSize: "2.5rem",
+                            color: "#ffffff",
+                          }}
+                        ></MdEmail>
+                      
+                       
+                      </Link>
+                    </NextLink>
+                  </div>
+                </Card>
+              </Grid>
+              <Grid item md={12} xs={12}>
+                <Card
+                  style={{
+                    backgroundImage: 'url("images/back.jpg")',
+                    // height: 250,
+                    width: "100%",
+                    backgroundSize: "cover",
+                    
+                    
+                  }}
+                >
+                  
+                  
+                </Card>
+              </Grid>
+            </Grid>
           </div>
         </Container>
+        <footer className={classes.footer}
+    //  position="static"
+     >
+        <Typography>All right reserved.quality foods</Typography>
+      </footer>
+        
+
       </div>
     </Layout>
   );

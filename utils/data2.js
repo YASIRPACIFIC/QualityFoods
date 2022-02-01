@@ -1,29 +1,30 @@
-
 const data2={
-  matter:[
-    {
-      images:"/images/incorporation.jpg",
-      slug:"Certification-of-incorporation",
-      
-
-    },
-    {
-      images:"/images/DGFT.jpg",
-      slug:"DGFT",
-    },
-    {
-      images:"/images/FIEO.jpg",
-      slug:"FIEO",
-    },
-    {
-      images:"/images/GST.jpg",
-      slug:"GST",
-    },
-    {
-      images:"/images/NAFED.jpg",
-      slug:"NAFED",
-    },
-   
-  ],
+    matter:[
+       
+        {
+            image:"/images/NAFED.jpg",
+            slug:"NAFED",
+        },
+        {
+            image:"/images/GST.jpg",
+            slug:"GST"
+        },
+        {
+            image:"/images/DGFT.jpg",
+            slug:"DGFT"
+        },
+        {
+            image:"/images/FIEO.jpg",
+            slug:"FIEO"
+        },
+        {
+            image:"/images/incorporation.jpg",
+            slug:"incorporation"
+        },
+        {
+            image:"/images/spiceboard.gif",
+            slug:"spice-board"
+        },
+    ],
 };
-export default data2;
+export default data2

@@ -13,6 +13,8 @@ const useStyles = makeStyles({
     },
     maxHeight: 150,
     // position:"fixed"
+    // marginTop:"2.5rem"
+    zIndex:100
   },
   main: {
     minHeight: "80vh",
@@ -32,14 +34,18 @@ const useStyles = makeStyles({
   },
 
   footer: {
+    display:"flex",
+    flexDirection:"row",
+    justifyContent:"center",
+    alignItems:"center",
     textAlign: "center",
-
+// backgroundColor:"#000000",
     color: "#000000",
-    position: "fixed",
-    // padding:10,
-    bottom: 0,
+    // position: "fixed",
+    padding:"2rem",
+    // bottom: 0,
     width: "100%",
-    height: 25,
+    // height: 25,
   },
   nav: {
     display: "flex",
@@ -69,9 +75,11 @@ const useStyles = makeStyles({
     display: "flex",
   },
   grid1: {
-    backgroundImage: 'url("images/cover2.jpeg")',
-    backgroundSize: "cover",
-    color: "#ffffff",
+    marginTop:15,
+    height:150
+    // backgroundImage: 'url("images/cover2.jpeg")',
+    // backgroundSize: "cover",
+    // color: "#ffffff",
   },
   whatsappfloat: {
     position: "fixed",
@@ -112,23 +120,41 @@ const useStyles = makeStyles({
     width: "100%",
     maxWidth: 800,
     margin: "0 auto",
+    
   },
   formbutton: {
-    backgroundColor: "#000000",
+    // backgroundImage:'url("images/fun.jpg")',
+    backgroundColor:"#000000",
+    backgroundSize:"cover",
     color: "#ffffff",
     "&:hover": {
-      backgroundColor: "#6C7A89",
+      backgroundImage:'url("images/fun3.jpg")',
+      backgroundSize:"cover"
+    },
+    //  props => props.color,
+  },
+  formbutton2: {
+  backgroundColor:"#34495E",
+    backgroundSize:"cover",
+    color: "#ffffff",
+    "&:hover": {
+      backgroundColor:"#16A085"
     },
     //  props => props.color,
   },
   textfieldfocus: {
     borderColor: "red",
+    color:"white",
+
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
         borderColor: "#000fff",
+        color:"white",
+        backgroundColor:"white"
       },
       "&.Mui-focused fieldset": {
         borderColor: "#C52328",
+        color:"White"
       },
     },
   },

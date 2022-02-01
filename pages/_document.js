@@ -1,6 +1,7 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/core";
 import React from "react";
+import theme from "../theme";
 export default class myDocument extends Document {
   render() {
     return (
@@ -9,6 +10,13 @@ export default class myDocument extends Document {
         <body>
           <Main></Main>
           <NextScript />
+          <style jsx global>{`
+            /* Other global styles such as 'html, body' etc... */
+
+            #__next {
+              height: 100%;
+            }
+          `}</style>
         </body>
       </Html>
     );

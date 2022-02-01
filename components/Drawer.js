@@ -18,7 +18,7 @@ import Image from "next/image";
   const classes = useStyles();
   return (
     <>
-      <Drawer  open={openDrawer} onClose={() => setOpenDrawer(false)} >
+      <Drawer  open={openDrawer} onClose={() => setOpenDrawer(false)} style={{width:"100%"}} >
         <List>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
@@ -87,8 +87,8 @@ import Image from "next/image";
        ></Image></Typography>
       
       </IconButton>
-     
-    </>
+     </>
+    
   );
 }
 export default DrawerComponent

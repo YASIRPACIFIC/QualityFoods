@@ -82,13 +82,17 @@ export default function Contactform() {
 
   
     return (
-       <form onSubmit={onSubmit} className={classes.form} style={{ backgroundColor:"#ffffff",borderRadius:"5px"}}>
+       <form onSubmit={onSubmit} className={classes.form} style={{ borderRadius:"5px",
+       backgroundImage:'url("images/cover4.jpg")'
+       
+       }}>
 <Typography style={{
     fontSize:"3rem",
     fontWeight:"bold",
     fontFamily:"serif",
-    color:"#000000",
+    color:"#ffffff",
     textAlign:"center"
+    
 }}>Feel free to write to us</Typography>
 <List >
     <ListItem >
@@ -163,8 +167,8 @@ export default function Contactform() {
         type="submit"
         fullWidth
         variant="contained"
-        color="#000000"
-        className={classes.formbutton} 
+        color="#189AB4"
+        className={classes.formbutton2} 
         >
             Submit
         </Button>
