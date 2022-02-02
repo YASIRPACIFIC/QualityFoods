@@ -2,7 +2,13 @@ import React from "react";
 import { useRouter } from "next/router";
 import useStyles from "../utils/styles";
 import Layout from "../components/layout";
-import { Card, CardMedia, Container, Grid ,Typography} from "@material-ui/core";
+import {
+  Card,
+  CardMedia,
+  Container,
+  Grid,
+  Typography,
+} from "@material-ui/core";
 import data2 from "../utils/data2";
 
 export default function Certificate() {
@@ -11,18 +17,18 @@ export default function Certificate() {
 
   return (
     <Layout title="certificate">
-        <div
-          style={{
-            backgroundImage: 'url("/images/cover3.jpg")',
-            backgroundSize: "cover",
-            display:"flex",
-            flexDirection:"column",
-            
-            paddingTop: "1rem",
+      <div
+        style={{
+          backgroundImage: 'url("/images/cover3.jpg")',
+          backgroundSize: "cover",
+          display: "flex",
+          flexDirection: "column",
+
+          paddingTop: "1rem",
           paddingBottom: "2rem",
-          }}
-        >
-        <Container 
+        }}
+      >
+        <Container
         // style={{height:"100%",overflowY:"auto"}}
         >
           <div
@@ -47,12 +53,13 @@ export default function Certificate() {
             </Grid>
           </div>
         </Container>
-    </div>
-    <footer className={classes.footer}
-    //  position="static"
-     >
+      </div>
+      <footer
+        className={classes.footer}
+        //  position="static"
+      >
         <Typography>All right reserved.quality foods</Typography>
       </footer>
-      </Layout>
+    </Layout>
   );
 }

@@ -30,26 +30,25 @@ export default function More() {
                   display: "inline-flex",
                   justifyContent: "space-evenly",
                   width: "100%",
-                  backgroundImage:'url("images/fun.jpg")',
-                  backgroundSize:"cover"
+                  backgroundImage: 'url("images/fun.jpg")',
+                  backgroundSize: "cover",
                 }}
               >
                 <NextLink href="/spices" passHref>
-                <Link  style={{color:"whitesmoke"}}>
+                  <Link style={{ color: "whitesmoke" }}>
                     <Typography variant="h7">Spices</Typography>
                   </Link>
                 </NextLink>
                 <NextLink href="/cereals" passHref>
-                  <Link style={{color:"whitesmoke"}}>
-                    <Typography >Cereals</Typography>
+                  <Link style={{ color: "whitesmoke" }}>
+                    <Typography>Cereals</Typography>
                   </Link>
                 </NextLink>
                 <NextLink href="/pulses" passHref>
-                  <Link  style={{color:"whitesmoke"}}>
-                    <Typography >Pulses&Grains</Typography>
+                  <Link style={{ color: "whitesmoke" }}>
+                    <Typography>Pulses&Grains</Typography>
                   </Link>
                 </NextLink>
-               
               </CardContent>
             </Card>
           </Grid>
@@ -82,7 +81,6 @@ export default function More() {
                 <Typography>Applam (pappadam)</Typography>
                 <Typography>Chukka Powder</Typography>
                 <Typography>Sweet Jeera</Typography>
-               
               </div>
             </Card>
           </Grid>

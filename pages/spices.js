@@ -29,23 +29,23 @@ export default function Spices() {
                   display: "inline-flex",
                   justifyContent: "space-evenly",
                   width: "100%",
-                  backgroundImage:'url("images/fun.jpg")',
-                  backgroundSize:"cover"
+                  backgroundImage: 'url("images/fun.jpg")',
+                  backgroundSize: "cover",
                 }}
               >
                 <NextLink href="/cereals" passHref>
-                  <Link style={{color:"whitesmoke"}}>
-                    <Typography >Cereals</Typography>
+                  <Link style={{ color: "whitesmoke" }}>
+                    <Typography>Cereals</Typography>
                   </Link>
                 </NextLink>
                 <NextLink href="/pulses" passHref>
-                  <Link  style={{color:"whitesmoke"}}>
-                    <Typography >Pulses&Grains</Typography>
+                  <Link style={{ color: "whitesmoke" }}>
+                    <Typography>Pulses&Grains</Typography>
                   </Link>
                 </NextLink>
                 <NextLink href="/more" passHref>
-                  <Link style={{color:"whitesmoke"}}>
-                    <Typography >More +</Typography>
+                  <Link style={{ color: "whitesmoke" }}>
+                    <Typography>More +</Typography>
                   </Link>
                 </NextLink>
               </CardContent>
@@ -56,12 +56,9 @@ export default function Spices() {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item md={3} sm={12} xs={12}>
             <Card style={{ marginTop: 10 }}>
-               
-
               <h1 style={{ textAlign: "center", fontFamily: "serif" }}>
                 Products
               </h1>
-                
 
               <div
                 style={{
@@ -98,7 +95,7 @@ export default function Spices() {
                       height={250}
                       Layout="responsive"
                     ></CardMedia>
-                    <CardContent >
+                    <CardContent>
                       <Typography>
                         <strong>{product.name}</strong>
                       </Typography>

@@ -19,7 +19,9 @@ export default function Layout({ children }) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
-    <div style={{ paddingTop: "5.5rem", zIndex: 1, width: "100%",height:"100%" }}>
+    <div
+      style={{ paddingTop: "5.5rem", zIndex: 1, width: "100%", height: "100%" }}
+    >
       <Head>
         <title>Quality foods</title>
       </Head>
@@ -101,7 +103,6 @@ export default function Layout({ children }) {
           // height: "88vh",
           // flexGrow:2,
           // overflowY: "auto",
-         
         }}
       >
         {children}

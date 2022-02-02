@@ -1,7 +1,6 @@
 import { ThemeContext } from "@emotion/react";
 import { makeStyles } from "@material-ui/core";
-import { fontSize, maxWidth, width } from "@mui/system";
-import { urlObjectKeys } from "next/dist/shared/lib/utils";
+
 import Image from "next/image";
 
 const useStyles = makeStyles({

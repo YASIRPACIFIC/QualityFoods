@@ -19,7 +19,7 @@ import Contactform from "../components/contactform";
 import { WhatsappShareButton, WhatsappIcon } from "next-share";
 import { FaPhoneAlt } from "react-icons/fa";
 import NextLink from "next/link";
-import {IoMdArrowRoundBack} from "react-icons/io"
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 export default function Contactus() {
   const classes = useStyles();
@@ -38,7 +38,7 @@ export default function Contactus() {
                     backgroundImage: 'url("images/address.jpg")',
                     color: "white",
                     backgroundSize: "cover",
-                    width:"100%"
+                    width: "100%",
                   }}
                 >
                   <CardContent style={{ textAlign: "center" }}>
@@ -58,7 +58,7 @@ export default function Contactus() {
                     backgroundImage: 'url("images/connect.jpg")',
                     color: "white",
                     backgroundSize: "auto",
-                    height:320
+                    height: 320,
                   }}
                 >
                   <CardContent>
@@ -67,7 +67,11 @@ export default function Contactus() {
                     </Typography>
                   </CardContent>
                   <div
-                    style={{ display: "flex", justifyContent: "space-evenly",marginTop:50 }}
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-evenly",
+                      marginTop: 50,
+                    }}
                   >
                     <Button
                       onClick={() => {
@@ -78,7 +82,7 @@ export default function Contactus() {
                       }}
                     >
                       <WhatsappIcon
-                        style={{ borderRadius: "47px", color: "#ffffff", }}
+                        style={{ borderRadius: "47px", color: "#ffffff" }}
                       ></WhatsappIcon>
                     </Button>
                     <Button
@@ -91,23 +95,18 @@ export default function Contactus() {
                           // marginTop:20,
                           fontSize: "2rem",
                           color: "#ffffff",
-                        
-
                         }}
                       ></FaPhoneAlt>
                     </Button>
                     <NextLink href="/contactus" passHref>
                       <Link>
-                     
-                      <MdEmail
+                        <MdEmail
                           style={{
                             marginBottom: -40,
                             fontSize: "2.5rem",
                             color: "#ffffff",
                           }}
                         ></MdEmail>
-                      
-                       
                       </Link>
                     </NextLink>
                   </div>
@@ -120,24 +119,18 @@ export default function Contactus() {
                     // height: 250,
                     width: "100%",
                     backgroundSize: "cover",
-                    
-                    
                   }}
-                >
-                  
-                  
-                </Card>
+                ></Card>
               </Grid>
             </Grid>
           </div>
         </Container>
-        <footer className={classes.footer}
-    //  position="static"
-     >
-        <Typography>All right reserved.quality foods</Typography>
-      </footer>
-        
-
+        <footer
+          className={classes.footer}
+          //  position="static"
+        >
+          <Typography>All right reserved.quality foods</Typography>
+        </footer>
       </div>
     </Layout>
   );

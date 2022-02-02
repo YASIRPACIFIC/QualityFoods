@@ -30,23 +30,23 @@ export default function Cereals() {
                   display: "inline-flex",
                   justifyContent: "space-evenly",
                   width: "100%",
-                  backgroundImage:'url("images/fun.jpg")',
-                  backgroundSize:"cover"
+                  backgroundImage: 'url("images/fun.jpg")',
+                  backgroundSize: "cover",
                 }}
               >
                 <NextLink href="/spices" passHref>
-                <Link  style={{color:"whitesmoke"}}>
+                  <Link style={{ color: "whitesmoke" }}>
                     <Typography variant="h7">Spices</Typography>
                   </Link>
                 </NextLink>
-                
+
                 <NextLink href="/pulses" passHref>
-                  <Link  style={{color:"whitesmoke"}}>
+                  <Link style={{ color: "whitesmoke" }}>
                     <Typography variant="h7">Pulses&Grains</Typography>
                   </Link>
                 </NextLink>
                 <NextLink href="/more" passHref>
-                  <Link style={{color:"whitesmoke"}}>
+                  <Link style={{ color: "whitesmoke" }}>
                     <Typography variant="h7">More +</Typography>
                   </Link>
                 </NextLink>

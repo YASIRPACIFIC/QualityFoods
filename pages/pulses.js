@@ -30,23 +30,23 @@ export default function Pulses() {
                   display: "inline-flex",
                   justifyContent: "space-evenly",
                   width: "100%",
-                  backgroundImage:'url("images/fun.jpg")',
-                  backgroundSize:"cover"
+                  backgroundImage: 'url("images/fun.jpg")',
+                  backgroundSize: "cover",
                 }}
               >
                 <NextLink href="/spices" passHref>
-                <Link  style={{color:"whitesmoke"}}>
+                  <Link style={{ color: "whitesmoke" }}>
                     <Typography variant="h7">Spices</Typography>
                   </Link>
                 </NextLink>
                 <NextLink href="/cereals" passHref>
-                  <Link style={{color:"whitesmoke"}}>
-                    <Typography >Cereals</Typography>
+                  <Link style={{ color: "whitesmoke" }}>
+                    <Typography>Cereals</Typography>
                   </Link>
                 </NextLink>
-               
+
                 <NextLink href="/more" passHref>
-                  <Link style={{color:"whitesmoke"}}>
+                  <Link style={{ color: "whitesmoke" }}>
                     <Typography variant="h7">More +</Typography>
                   </Link>
                 </NextLink>

@@ -4,46 +4,53 @@ import styles from "../styles/Home.module.css";
 import React from "react";
 import Layout from "../components/layout";
 import useStyles from "../utils/styles";
-import { Toolbar, Typography, Link, Container,Grid, Button } from "@material-ui/core";
+import {
+  Toolbar,
+  Typography,
+  Link,
+  Container,
+  Grid,
+  Button,
+} from "@material-ui/core";
 import NextLink from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
 
 import {
-FacebookShareButton,
-FacebookIcon,
-PinterestShareButton,
-PinterestIcon,
-RedditShareButton,
-RedditIcon,
-WhatsappShareButton,
-WhatsappIcon,
-LinkedinShareButton,
-LinkedinIcon,
-} from 'next-share';
+  FacebookShareButton,
+  FacebookIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  RedditShareButton,
+  RedditIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from "next-share";
 
 // export  function Text(props) {
 // return (
 // 	<div>
 // 	<h1>Social Share - GeeksforGeeks</h1>
 // 	<FacebookShareButton
-	
+
 // 		url={'http://localhost:3000'} >
 // 		<FacebookIcon size={32} round />
 // 	</FacebookShareButton>
 // 	<PinterestShareButton
-	
+
 // 		url={'http://localhost:3000'} >
 // 		<PinterestIcon size={32} round />
 // 	</PinterestShareButton>
 // 	<RedditShareButton
-	
+
 // 		url={'http://localhost:3000'} >
 // 		<RedditIcon size={32} round />
 // 	</RedditShareButton>
 // 	<WhatsappShareButton
 // 		// url=" https://wa.me/+919567420000?text=welcome"
-// 		url="https://api.whatsapp.com/send?phone=919567420000" 
+// 		url="https://api.whatsapp.com/send?phone=919567420000"
 //     >
 // 		<WhatsappIcon size={32} round />
 // 	</WhatsappShareButton>
@@ -91,10 +98,10 @@ export default function Home(props) {
         </NextLink>
       </div> */}
       <Grid>
-      <Grid item md={12} xs={12} ms={12}>
-      <div style={{backgroundColor:"#000000"}}>
-          <Container>
-        {/* <Toolbar className={classes.nav} >
+        <Grid item md={12} xs={12} ms={12}>
+          <div style={{ backgroundColor: "#000000" }}>
+            <Container>
+              {/* <Toolbar className={classes.nav} >
           <NextLink href="/aboutus" passHref>
             <Link style={{ textDecorationLine: "none" ,color:"#ffffff"}}>
               <Typography> ABOUT US </Typography>
@@ -117,11 +124,11 @@ export default function Home(props) {
             </Link>
           </NextLink>
         </Toolbar> */}
-          </Container>
-      </div>
+            </Container>
+          </div>
+        </Grid>
       </Grid>
-      </Grid>
-      
+
       <div className={classes.cover} style={{ fontFamily: "sans-serif" }}>
         <Container className={classes.content}>
           <h2 style={{ fontSize: "1.7rem" }}>Our High-Quality</h2>
@@ -158,11 +165,11 @@ export default function Home(props) {
           </div>
           {/* <Text></Text> */}
         </Container>
-
       </div>
-      <footer className={classes.footer}
-    //  position="static"
-     >
+      <footer
+        className={classes.footer}
+        //  position="static"
+      >
         <Typography>All right reserved.quality foods</Typography>
       </footer>
     </Layout>
