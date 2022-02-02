@@ -31,13 +31,14 @@ export default function Contactus() {
         <Container style={{ paddingTop: 30 }}>
           <Contactform></Contactform>
           <div style={{ marginTop: 50 }}>
-            <Grid container spacing={5}>
+            <Grid container spacing={2}>
               <Grid item md={6} xs={12}>
                 <Card
                   style={{
                     backgroundImage: 'url("images/address.jpg")',
                     color: "white",
                     backgroundSize: "cover",
+                    width:"100%"
                   }}
                 >
                   <CardContent style={{ textAlign: "center" }}>

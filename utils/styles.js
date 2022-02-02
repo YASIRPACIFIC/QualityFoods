@@ -108,7 +108,9 @@ const useStyles = makeStyles({
     backgroundImage: 'url("images/cover4.jpg")',
     backgroundSize: "cover",
     width: "100%",
-    minHeight: 1000,
+    // minHeight: 100,
+    flexGrow:2,
+          overflowY: "auto",
   },
   // cover3:{
   //   backgroundImage:'url("images/cover3.jpg")',
